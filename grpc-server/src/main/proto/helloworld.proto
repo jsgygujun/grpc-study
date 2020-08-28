@@ -13,27 +13,25 @@
 // limitations under the License.
 syntax = "proto3";
 
-// 使顶级消息、枚举和服务在包级别定义，而不是在以.proto文件命名的外部类中定义
 option java_multiple_files = true;
-// Java 包名称
 option java_package = "com.jsgygujun.grpc.proto.helloworld";
-// Java 类名
 option java_outer_classname = "HelloWorldProto";
 option objc_class_prefix = "HLW";
 
 package helloworld;
 
-// gRPC 服务名称
+// The greeting service definition.
 service Greeter {
+  // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
 
-// gRPC 请求格式
+// The request message containing the user's name.
 message HelloRequest {
   string name = 1;
 }
 
-// gRPC 相应格式
+// The response message containing the greetings
 message HelloReply {
   string message = 1;
 }

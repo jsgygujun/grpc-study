@@ -1,3 +1,6 @@
 /.idea/
 /grpc-study.iml
 /grpc-client/target/
+/grpc-client/grpc-client.iml
+/grpc-server/target/
+/grpc-server/grpc-server.iml
