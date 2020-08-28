@@ -60,10 +60,10 @@
                 <executions>
                     <execution>
                         <goals>
-                            <!-- 生成消息体源码 message  -->
-                            <!--<goal>compile</goal>-->
+                            <!-- 生成消息体源码 message -->
+                            <!-- <goal>compile</goal> -->
                             <!-- 生成 gRPC 服务接口 -->
-                            <!--<goal>compile-custom</goal>-->
+                            <!-- <goal>compile-custom</goal> -->
                             <!-- 执行 maven package 在 target/generated-resources 目录下生成相应的 java 代码 -->
                         </goals>
                     </execution>
